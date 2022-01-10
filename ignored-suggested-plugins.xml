@@ -3,6 +3,7 @@
     <option name="pluginIds">
       <list>
         <option value="idea.plugin.protoeditor" />
+        <option value="com.haulmont.jpab" />
       </list>
     </option>
   </component>
