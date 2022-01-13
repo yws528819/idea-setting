@@ -3,6 +3,7 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*Strategy.java" />
     <mask>*.js</mask>
     <mask>*.as</mask>
     <mask>*.mxml</mask>
@@ -15,5 +16,6 @@
     <mask>*.properties</mask>
     <mask>*.java</mask>
     <mask>*.sql</mask>
+    <mask>*Strategy.java</mask>
   </component>
 </application>
