@@ -14,9 +14,9 @@
     <mask>*.jsp</mask>
     <mask>*.properties</mask>
     <mask>*.java</mask>
-    <mask>*.sql</mask>
     <mask>*Strategy.java</mask>
     <mask>pom.xml</mask>
     <mask>*</mask>
+    <mask>*.sql</mask>
   </component>
 </application>
