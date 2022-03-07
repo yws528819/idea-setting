@@ -98,6 +98,10 @@
           <option name="url" value="http://10.10.20.35/microservice/dc/dc-be/dc.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/cat-milk/Anime-Girls-Holding-Programming-Books.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="D:\IDEA_Workspace" />
