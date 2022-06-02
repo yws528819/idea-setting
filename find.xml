@@ -3,6 +3,7 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*.ora" />
     <mask>*.js</mask>
     <mask>*.as</mask>
     <mask>*.mxml</mask>
@@ -19,5 +20,6 @@
     <mask>*</mask>
     <mask>*.sql</mask>
     <mask>*.my</mask>
+    <mask>*.ora</mask>
   </component>
 </application>
