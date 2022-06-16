@@ -81,6 +81,22 @@
             </PluginData>
           </value>
         </entry>
+        <entry key="com.alibabacloud.intellij.toolkit-intellij">
+          <value>
+            <PluginData>
+              <option name="dependencies">
+                <set>
+                  <option value="Git4Idea" />
+                  <option value="com.intellij.modules.lang" />
+                  <option value="com.intellij.modules.vcs" />
+                  <option value="org.jetbrains.plugins.terminal" />
+                  <option value="org.jetbrains.plugins.yaml" />
+                </set>
+              </option>
+              <option name="enabled" value="false" />
+            </PluginData>
+          </value>
+        </entry>
         <entry key="com.baomidou.plugin.idea.mybatisx">
           <value>
             <PluginData>
@@ -148,6 +164,11 @@
                 </set>
               </option>
             </PluginData>
+          </value>
+        </entry>
+        <entry key="org.jetbrains.kotlin">
+          <value>
+            <PluginData />
           </value>
         </entry>
         <entry key="zielu.gittoolbox">
