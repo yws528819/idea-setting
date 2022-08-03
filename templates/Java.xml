@@ -5,7 +5,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="tmsleep" value="//暂停几毫秒线程&#10;try{ TimeUnit.MICROSECONDS.sleep($time$); }catch (Exception e) { e.printStackTrace(); }" description="" toReformat="false" toShortenFQNames="true">
+  <template name="tsleepms" value="//暂停几毫秒线程&#10;try{ TimeUnit.MICROSECONDS.sleep($time$); }catch (Exception e) { e.printStackTrace(); }" description="" toReformat="false" toShortenFQNames="true">
     <variable name="time" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
