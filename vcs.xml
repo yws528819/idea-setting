@@ -118,6 +118,14 @@
           <option name="url" value="http://10.10.20.35/srm/srm-app/srm-app.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://192.168.1.16/svn/DEV/1_Baseline/1.2_模板/源码模板/实施项目源码模板/SRM/7.3.2/srm" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://192.168.1.16" />
+          <option name="userName" value="yews" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="D:\IDEA_QzingWorkspace" />
