@@ -138,9 +138,13 @@
           <option name="url" value="https://github.com/yws528819/javascript-test.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://10.10.20.35/microservice/auc/auc.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="E:\" />
+    <option name="cloneParentDir" value="D:\IDEA_QzingWorkspace" />
   </component>
   <component name="Vcs.Log.App.Settings">
     <option name="SHOW_TAG_NAMES" value="true" />
