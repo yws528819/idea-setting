@@ -5,6 +5,7 @@
         <option value="idea.plugin.protoeditor" />
         <option value="com.haulmont.jpab" />
         <option value="com.intellij.bigdatatools" />
+        <option value="com.jetbrains.jax.ws" />
       </list>
     </option>
   </component>
