@@ -3,6 +3,7 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*.sql" />
     <mask>*.js</mask>
     <mask>*.as</mask>
     <mask>*.mxml</mask>
@@ -16,12 +17,12 @@
     <mask>*Strategy.java</mask>
     <mask>pom.xml</mask>
     <mask>*</mask>
-    <mask>*.sql</mask>
     <mask>*.my</mask>
     <mask>*.ora</mask>
     <mask>*.1</mask>
     <mask>*1_6*</mask>
     <mask>*.xml</mask>
     <mask>*.yaml</mask>
+    <mask>*.sql</mask>
   </component>
 </application>
