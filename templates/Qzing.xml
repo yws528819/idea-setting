@@ -15,9 +15,10 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="findPage" value="String filter = request.getFilter();&#10;Integer page = request.getPage();&#10;Integer pageSize = request.getPageSize();&#10;//排序&#10;String sorted = request.getSorted();&#10;if (StringUtils.isBlank(sorted)) {&#10;    sorted = &quot;$id$ desc&quot;;&#10;}&#10;org.springframework.data.domain.Page&lt;$entity$&gt; result = receiptBillDetailService.findAllWithPage(filter, page, pageSize, sorted);&#10;List&lt;$response$&gt; detailList = Json.parseArray(Json.toJson(result.getContent()), $response$.class);&#10;Page&lt;$response$&gt; pageVo = new Page&lt;&gt;(page, pageSize);&#10;pageVo.setRecords(detailList);&#10;pageVo.setTotalCount(result.getTotalElements());&#10;return RestResponse.success(pageVo);" description="分页模板" toReformat="false" toShortenFQNames="true">
+  <template name="findPage" value="String filter = request.getFilter();&#10;Integer page = request.getPage();&#10;Integer pageSize = request.getPageSize();&#10;//排序&#10;String sorted = request.getSorted();&#10;if (StringUtils.isBlank(sorted)) {&#10;    sorted = &quot;$id$ desc&quot;;&#10;}&#10;org.springframework.data.domain.Page&lt;$entity$&gt; result = $service$.findAllWithPage(filter, page, pageSize, sorted);&#10;List&lt;$response$&gt; detailList = Json.parseArray(Json.toJson(result.getContent()), $response$.class);&#10;Page&lt;$response$&gt; pageVo = new Page&lt;&gt;(page, pageSize);&#10;pageVo.setRecords(detailList);&#10;pageVo.setTotalCount(result.getTotalElements());&#10;return RestResponse.success(pageVo);" description="分页模板" toReformat="false" toShortenFQNames="true">
     <variable name="id" expression="" defaultValue="id" alwaysStopAt="true" />
     <variable name="entity" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="service" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="response" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
