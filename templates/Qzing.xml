@@ -24,4 +24,9 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="&lt;abbreviation&gt;" value="    @ApiOperation(&quot;编辑保存&quot;)&#10;    @PostMapping(&quot;/update&quot;)&#10;    @AddOperateLog(action = BaseConstants.ACTION_UPDATE)&#10;    public RestResponse update(@RequestBody OldAuctionApplyRequest request) {&#10;        logger.info(&quot;废旧竞拍申请编辑保存-参数{}&quot;, JSON.toJSONString(request));&#10;        return auctionApplyService.update(request, getUserAuthInfo());&#10;    }" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
