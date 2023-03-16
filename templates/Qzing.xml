@@ -24,7 +24,12 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="&lt;abbreviation&gt;" value="    @ApiOperation(&quot;编辑保存&quot;)&#10;    @PostMapping(&quot;/update&quot;)&#10;    @AddOperateLog(action = BaseConstants.ACTION_UPDATE)&#10;    public RestResponse update(@RequestBody OldAuctionApplyRequest request) {&#10;        logger.info(&quot;废旧竞拍申请编辑保存-参数{}&quot;, JSON.toJSONString(request));&#10;        return auctionApplyService.update(request, getUserAuthInfo());&#10;    }" toReformat="false" toShortenFQNames="true">
+  <template name="qzing-client" value="@ApiOperation(&quot;$desc$&quot;)&#10;@PostMapping(&quot;/$methodlow$&quot;)&#10;@AddOperateLog(action = &quot;xx&quot;)&#10;public RestResponse $method$(@RequestBody $request$ request) {&#10;    logger.info(&quot;$funName$$desc$-参数{}&quot;, JSON.toJSONString(request));&#10;    return auctionApplyService.$method$(request, getUserAuthInfo());&#10;}" description="client接口" toReformat="false" toShortenFQNames="true">
+    <variable name="desc" expression="" defaultValue="接口名称" alwaysStopAt="true" />
+    <variable name="request" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="methodlow" expression="lowercaseAndDash(method)" defaultValue="" alwaysStopAt="true" />
+    <variable name="funName" expression="" defaultValue="功能名称" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
