@@ -8,6 +8,7 @@
         <option value="com.jetbrains.jax.ws" />
         <option value="com.intellij.spring.websocket" />
         <option value="JRebelPlugin" />
+        <option value="com.intellij.drools" />
       </list>
     </option>
   </component>
