@@ -3,12 +3,9 @@
     <option name="caseSensitive" value="true" />
     <option name="customScope" value="Changes" />
     <option name="defaultScopeName" value="Changes" />
-    <option name="localCaseSensitive" value="true" />
-    <option name="localWholeWordsOnly" value="true" />
     <option name="CASE_SENSITIVE_SEARCH" value="true" />
-    <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
-    <option name="LOCAL_WHOLE_WORDS_ONLY" value="true" />
     <option name="SEARCH_SCOPE" value="Changes" />
+    <option name="FILE_MASK" value="*.java" />
     <mask>*.js</mask>
     <mask>*.as</mask>
     <mask>*.mxml</mask>
@@ -18,7 +15,6 @@
     <mask>*.html</mask>
     <mask>*.jsp</mask>
     <mask>*.properties</mask>
-    <mask>*.java</mask>
     <mask>*Strategy.java</mask>
     <mask>pom.xml</mask>
     <mask>*</mask>
@@ -32,5 +28,6 @@
     <mask>*java</mask>
     <mask>*xml</mask>
     <mask>*.yml</mask>
+    <mask>*.java</mask>
   </component>
 </application>
