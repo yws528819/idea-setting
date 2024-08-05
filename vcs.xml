@@ -1,11 +1,10 @@
 <application>
   <component name="Vcs.Log.App.Settings">
-    <option name="SHOW_TAG_NAMES" value="true" />
     <option name="COLUMN_ID_ORDER">
       <list>
         <option value="Default.Root" />
-        <option value="Default.Author" />
         <option value="Default.Subject" />
+        <option value="Default.Author" />
         <option value="Default.Date" />
         <option value="Space.CommitStatus" />
         <option value="Default.Hash" />
@@ -16,6 +15,7 @@
         <entry key="Table.Default.Hash.ColumnIdVisibility" value="true" />
       </map>
     </option>
+    <option name="SHOW_TAG_NAMES" value="true" />
   </component>
   <component name="VcsEditorTab.Settings">
     <option name="openInNewWindow" value="true" />
