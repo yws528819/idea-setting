@@ -20,4 +20,14 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="xx-query-mapper" value="IPage&lt;OrderInfo&gt; getOrderInfoByReq(Page&lt;OrderInfo&gt; page, @Param(&quot;od&quot;) OrderListReq req);" description="mapper类查询" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="xx-query-service" value="&#10;Integer sid = SecureUtil.getUserSid();//当前登录用户ID&#10;req.setSid(sid);&#10;&#10;//下单截止日期，加上时分秒&#10;String endCreateDate = req.getEndCreateDate();&#10;if (Func.isNotEmpty(endCreateDate)) {&#10;    req.setEndCreateDate(endCreateDate + &quot; 23:59:59&quot;);&#10;}&#10;&#10;//查询主单信息&#10;Page&lt;OrderInfo&gt; page = new Page&lt;&gt;(req.getPageNum(), req.getPageSize(), true);&#10;IPage&lt;OrderInfo&gt; orderPages = orderMapper.getOrderInfoByReq(page, req);&#10;List&lt;OrderInfo&gt; orderInfos = orderPages.getRecords();//查询的订单信息&#10;if (Func.isEmpty(orderInfos)) {&#10;    return new Page&lt;&gt;();&#10;}&#10;&#10;//主单赋值对应子订单集合&#10;List&lt;OrderListVO&gt; retOrders = new ArrayList&lt;&gt;();//返回对象集合&#10;for (OrderInfo orderInfo : orderInfos) {&#10;    OrderListVO retVO = BeanUtil.toBean(orderInfo, OrderListVO.class);&#10;    retOrders.add(retVO);&#10;}&#10;&#10;//转成返回对象&#10;IPage&lt;OrderListVO&gt; orderRetPage = new Page&lt;&gt;();&#10;BeanUtil.copyProperties(orderPages, orderRetPage);&#10;orderRetPage.setRecords(retOrders);&#10;return orderRetPage;&#10;" description="查询service" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
