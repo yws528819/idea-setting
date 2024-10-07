@@ -30,4 +30,11 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="xx-mybatis-in" value="t.order_id IN&#10;&lt;foreach close=&quot;)&quot; collection=&quot;$ids$&quot; index=&quot;index&quot; item=&quot;item&quot; open=&quot;(&quot; separator=&quot;,&quot;&gt;&#10;    #{item}&#10;&lt;/foreach&gt;" description="in遍历查询" toReformat="false" toShortenFQNames="true">
+    <variable name="ids" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
 </templateSet>
