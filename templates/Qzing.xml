@@ -8,7 +8,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="qzing-class" value="/**&#10; * @Description: TODO &#10; * @Title: &#10; * @Author yews&#10; * @Date: $date$ $time$&#10; */" description="类上加注释" toReformat="false" toShortenFQNames="true">
+  <template name="qzing-class" value="/**&#10; * @Description: TODO&#10; * @Author yews&#10; * @Date: $date$ $time$&#10; */" description="类上加注释" toReformat="false" toShortenFQNames="true">
     <variable name="date" expression="" defaultValue="date()" alwaysStopAt="true" />
     <variable name="time" expression="" defaultValue="time()" alwaysStopAt="true" />
     <context>
