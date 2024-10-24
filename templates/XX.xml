@@ -53,4 +53,18 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="xx-query-selectbypage" value="/**&#10; * 分页查询指定行数据&#10; * @param page 分页参数&#10; * @param wrapper 动态查询条件&#10; * @return 分页对象列表&#10; */&#10;IPage&lt;$entity$&gt; selectByPage(IPage &lt;$entity$&gt; page, @Param(Constants.WRAPPER) Wrapper &lt;$entity$&gt; wrapper);" description="默认分页查询" toReformat="false" toShortenFQNames="true">
+    <variable name="entity" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="xx-mybatis-selectbypage" value="&lt;select id=&quot;selectByPage&quot; resultType=&quot;$entity$&quot;&gt;&#10;    select * from $table$ ${ew.customSqlSegment}&#10;&lt;/select&gt;" description="默认分页查询" toReformat="false" toShortenFQNames="true">
+    <variable name="entity" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="table" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
 </templateSet>
