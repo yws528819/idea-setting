@@ -45,7 +45,7 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="xx-enum" value="import com.baomidou.mybatisplus.annotation.EnumValue;&#10;import com.fasterxml.jackson.annotation.JsonValue;&#10;import lombok.AllArgsConstructor;&#10;import lombok.Getter;&#10;&#10;/**&#10; * @Description: &#10; * @Author yews&#10; * @Date: $date$ $time$ &#10; */&#10;@Getter&#10;@AllArgsConstructor&#10;public enum $className$ {&#10;&#10;    XX(&quot;xx&quot;, &quot;desc&quot;);&#10;&#10;    @EnumValue&#10;    @JsonValue&#10;    private final String value;&#10;&#10;    private final String name;&#10;&#10;    @Override&#10;    public String toString() {&#10;        return this.name;&#10;    }&#10;}&#10;" description="枚举类" toReformat="false" toShortenFQNames="true">
+  <template name="xx-enum" value="import com.baomidou.mybatisplus.annotation.EnumValue;&#10;import com.fasterxml.jackson.annotation.JsonValue;&#10;import lombok.AllArgsConstructor;&#10;import lombok.Getter;&#10;&#10;/**&#10; * @Description: &#10; * @Author yews&#10; * @Date: $date$ $time$ &#10; */&#10;@Getter&#10;@AllArgsConstructor&#10;public enum $className$ {&#10;&#10;    XX(&quot;xx&quot;, &quot;desc&quot;),&#10;    ;&#10;&#10;    @EnumValue&#10;    @JsonValue&#10;    private final String value;&#10;&#10;    private final String name;&#10;&#10;    @Override&#10;    public String toString() {&#10;        return this.name;&#10;    }&#10;}&#10;" description="枚举类" toReformat="false" toShortenFQNames="true">
     <variable name="date" expression="" defaultValue="date()" alwaysStopAt="true" />
     <variable name="time" expression="" defaultValue="time()" alwaysStopAt="true" />
     <variable name="className" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
