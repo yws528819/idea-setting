@@ -1,9 +1,8 @@
 <templateSet group="Qzing">
-  <template name="*" value="* &#10; * TODO&#10; $param$&#10; $return$&#10; * @author yews&#10; * @since $date$ $time$ &#10; */" description="方法上加注释" toReformat="false" toShortenFQNames="true">
-    <variable name="param" expression="" defaultValue="groovyScript(&quot;if(\&quot;${_1}\&quot;.length() == 2) {return '';} else {def result=''; def params=\&quot;${_1}\&quot;.replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList();for(i = 0; i &lt; params.size(); i++) {if(i==0){result+='* @param ' + params[i] + ': '}else{result+='\\n' + ' * @param ' + params[i] + ': '}}; return result;}&quot;, methodParameters());" alwaysStopAt="true" />
-    <variable name="return" expression="" defaultValue="groovyScript(&quot;return &quot;${_1}&quot; == &quot;void&quot; ? &quot;&quot; : &quot;* @return ${_1}&quot;&quot;, methodReturnType());" alwaysStopAt="true" />
-    <variable name="date" expression="" defaultValue="date()" alwaysStopAt="true" />
-    <variable name="time" expression="" defaultValue="time()" alwaysStopAt="true" />
+  <template name="*" value="*&#10; * TODO $param$  $return$&#10; * @author yews&#10; * @since $date$&#10; */" description="方法上加注释" toReformat="true" toShortenFQNames="true">
+    <variable name="param" expression="groovyScript(&quot;def result=''; def stop=false; def params=\&quot;${_1}\&quot;.replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList(); if (params.size()==1 &amp;&amp; (params[0]==null || params[0]=='null' || params[0]=='')) { stop=true; }; if(!stop) { for(i=0; i &lt; params.size(); i++) {if(i==0) result += '\\n'; result +=((i &lt; params.size() - 1) ? ' * @param ' + params[i] + ':\\r\\n' : ' * @param ' + params[i] + ':')}; }; return result;&quot;, methodParameters())" defaultValue="" alwaysStopAt="false" />
+    <variable name="return" expression="groovyScript(&quot;def result=''; def data=\&quot;${_1}\&quot;; def stop=false; if(data==null || data=='null' || data=='' || data=='void') { stop=true; }; if(!stop) { result += '\\n'; result += ' * @return ' + data; }; return result;&quot;, methodReturnType())" defaultValue="" alwaysStopAt="false" />
+    <variable name="date" expression="date(&quot;yyyy/MM/dd HH:mm&quot;)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
