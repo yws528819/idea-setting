@@ -4,6 +4,7 @@
     <keyboard-shortcut first-keystroke="alt 7" />
   </action>
   <action id="AddToFavoritesPopup" />
+  <action id="CWMHostShowPopupAction" />
   <action id="CallHierarchy">
     <keyboard-shortcut first-keystroke="shift ctrl h" />
   </action>
@@ -106,5 +107,6 @@
     <keyboard-shortcut first-keystroke="ctrl e" />
   </action>
   <action id="VcsHistory.ShowAllAffected" />
+  <action id="comate.OpenToolWindowAction" />
   <action id="context.save" />
 </keymap>
