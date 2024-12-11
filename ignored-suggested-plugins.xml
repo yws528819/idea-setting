@@ -9,6 +9,7 @@
         <option value="com.intellij.spring.websocket" />
         <option value="JRebelPlugin" />
         <option value="com.intellij.drools" />
+        <option value="com.intellij.dubbo" />
       </list>
     </option>
   </component>
