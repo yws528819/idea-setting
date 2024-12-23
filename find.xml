@@ -2,9 +2,8 @@
   <component name="FindSettings">
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
-    <option name="regularExpressions" value="true" />
-    <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*Prod" />
     <mask>*.js</mask>
     <mask>*.as</mask>
     <mask>*.mxml</mask>
@@ -29,5 +28,8 @@
     <mask>l</mask>
     <mask>*.xml</mask>
     <mask>*.java</mask>
+    <mask>Dockerflet</mask>
+    <mask>*Test</mask>
+    <mask>*Prod</mask>
   </component>
 </application>
