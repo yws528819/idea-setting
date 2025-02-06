@@ -3,6 +3,7 @@
     <option name="customScope" value="Changes" />
     <option name="defaultScopeName" value="Changes" />
     <option name="SEARCH_SCOPE" value="Changes" />
+    <option name="FILE_MASK" value="U*.java" />
     <mask>*.js</mask>
     <mask>*.as</mask>
     <mask>*.mxml</mask>
@@ -35,5 +36,6 @@
     <mask>OrderP*</mask>
     <mask>*.xml</mask>
     <mask>*.java</mask>
+    <mask>U*.java</mask>
   </component>
 </application>
