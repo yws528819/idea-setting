@@ -3,6 +3,7 @@
     <option name="customScope" value="Changes" />
     <option name="defaultScopeName" value="Changes" />
     <option name="SEARCH_SCOPE" value="Changes" />
+    <option name="FILE_MASK" value="N*.java" />
     <mask>*.js</mask>
     <mask>*.as</mask>
     <mask>*.mxml</mask>
@@ -37,5 +38,6 @@
     <mask>U*.java</mask>
     <mask>*Group*.java</mask>
     <mask>*.java</mask>
+    <mask>N*.java</mask>
   </component>
 </application>
