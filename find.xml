@@ -3,6 +3,7 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*.xml" />
     <mask>*.js</mask>
     <mask>*.as</mask>
     <mask>*.mxml</mask>
@@ -33,10 +34,10 @@
     <mask>*Docker*</mask>
     <mask>Nine*.java</mask>
     <mask>OrderP*</mask>
-    <mask>*.xml</mask>
     <mask>U*.java</mask>
     <mask>*Group*.java</mask>
     <mask>N*.java</mask>
     <mask>*.java</mask>
+    <mask>*.xml</mask>
   </component>
 </application>
