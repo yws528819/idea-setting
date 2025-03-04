@@ -3,7 +3,6 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*.java" />
     <mask>*.js</mask>
     <mask>*.as</mask>
     <mask>*.mxml</mask>
@@ -37,9 +36,9 @@
     <mask>U*.java</mask>
     <mask>*Group*.java</mask>
     <mask>N*.java</mask>
-    <mask>*.xml</mask>
     <mask>*.XML</mask>
     <mask>Order*.java</mask>
     <mask>*.java</mask>
+    <mask>*.xml</mask>
   </component>
 </application>
