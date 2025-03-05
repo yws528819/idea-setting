@@ -40,5 +40,7 @@
     <mask>Order*.java</mask>
     <mask>*.java</mask>
     <mask>*.xml</mask>
+    <mask>*Controller.*</mask>
+    <mask>Order*Controller.*</mask>
   </component>
 </application>
